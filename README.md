@@ -1,2 +1,2 @@
 # bitbank-client
-This is Golang's library for using bitbank's API.
+This is Golang library for using bitbank's API.
