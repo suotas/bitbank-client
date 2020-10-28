@@ -41,7 +41,7 @@ func NewClient(apiToken, apiSecret string) (*Client, error) {
 	},nil
 }
 
-func (c *Client) SendRequest(path string) (*http.Response){
+func (c *Client) SendRequest(path string) (*http.Response, error){
 	res, _ := c.HTTPClient.Get(path)
-	return res
+	return res, nil
 }
